@@ -1,0 +1,1 @@
+--with-boost-libdir=/home/software/boostbuild/lib --with-boost-incdir=/home/software/boostbuild/include --with-eigen-incdir=/home/software/sharedincludes/eigen3 --with-lapack-libdir=/home/software/sharedlibs
