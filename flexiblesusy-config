@@ -2,8 +2,8 @@
 
 # Author: Alexander Voigt
 
-models="/home/pathron/SMcode/models/SM"
-version="1.0.2"
+models="/home/pathron/SMcode/models/StandardModel"
+version="1.0.3"
 cppflags=""
 cxxflags="-std=c++11 -O2"
 fflags="-O2 -frecursive"

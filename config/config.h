@@ -1,13 +1,14 @@
 /* DO NOT EDIT! GENERATED AUTOMATICALLY! */
-/* generated at Tue Sep 23 10:58:36 CST 2014 */
+/* generated at Sat Nov 29 17:44:09 CST 2014 */
 
 #define PKGNAME "FlexibleSUSY"
 
-#define FLEXIBLESUSY_VERSION  "1.0.2"
+#define FLEXIBLESUSY_VERSION  "1.0.3"
 #define FLEXIBLESUSY_MAJOR    1
 #define FLEXIBLESUSY_MINOR    0
-#define FLEXIBLESUSY_PATCH    2
+#define FLEXIBLESUSY_PATCH    3
 #define FLEXIBLESUSY_EXTRA    ""
+#define GIT_COMMIT            "unknown"
 
 #define SARAH_VERSION         "unknown"
 #define SARAH_MAJOR           0
@@ -40,6 +41,9 @@
 
 /* Enable colored printout */
 #undef ENABLE_COLOR
+
+/* Enable eigenvalues error check */
+#undef CHECK_EIGENVALUE_ERROR
 
 /* Enable debug mode */
 #undef ENABLE_DEBUG

@@ -1,7 +1,7 @@
 # Package information
 PKGNAME         := FlexibleSUSY
 VERSION         := 1.0.2
-ABSBASEDIR      := /home/pathron/SMcode
+ABSBASEDIR      := /home/pathron/SMcode3
 
 # Switches
 ENABLE_FFLITE    := no
@@ -10,7 +10,7 @@ ENABLE_THREADS   := yes
 
 LIBEXT          := .a
 
-MODEL           := SM
+MODEL           := StandardModel
 
 MODELDIR        := $(ABSBASEDIR)/models/$(MODEL)
 CONFIGDIR       := $(ABSBASEDIR)/config

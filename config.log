@@ -1,6 +1,7 @@
-Package: FlexibleSUSY
-Version: 1.0.2
-Date:    Tue Sep 23 10:58:36 CST 2014
+Package:    FlexibleSUSY
+Version:    1.0.3
+Date:       Sat Nov 29 17:44:09 CST 2014
+Git commit: unknown
 
 # Platform information
 
@@ -65,6 +66,18 @@ Checking for libboost_unit_test_framework libboost_unit_test_framework-mt ...
    Result: found in /home/software/boostbuild/lib
 Checking for Eigen/Core ... 
    Result: found in /home/software/sharedincludes/eigen3
+Checking for eigen version ... 
+===================================
+Trying to compile test program
+   Status: compilation successful.
+Running executable: /home/pathron/SMcode/conftest.x
+The executable returned exit code: 0
+The executable produced output:
+3.2.1
+===================================
+
+   Result: ok (version 3.2.1)
+   Eigen version found: 3.2.1
 Checking for libgfortran ... 
    Result: found in /usr/lib/gcc/x86_64-redhat-linux/4.8.2/
 Checking for GSL configuration gsl-config ... 
@@ -118,16 +131,18 @@ The executable produced no output.
 Checking for libpthread ... 
    Result: found in /usr/lib64
 Checking for models ... 
-Note: No start script not found in /home/pathron/SMcode/models/SM
+Note: No start script not found in /home/pathron/SMcode/models/StandardModel
 
-Note: No FlexibleSUSY model file found in /home/pathron/SMcode/models/SM
+Note: No FlexibleSUSY model file found in /home/pathron/SMcode/models/StandardModel
 
-   Result: ok (/home/pathron/SMcode/SM)
-   Models: /home/pathron/SMcode/models/SM
+   Result: ok (/home/pathron/SMcode/StandardModel)
+   Models: /home/pathron/SMcode/models/StandardModel
 Disabling colored output
    #undef ENABLE_COLOR
 Disabling debug mode
    #undef ENABLE_DEBUG
+Disabling eigenvalue error check
+   #undef CHECK_EIGENVALUE_ERROR
 Disabling usage of fflite
    #undef ENABLE_FFLITE
 Disabling usage of LoopTools

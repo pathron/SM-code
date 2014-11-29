@@ -1,12 +1,12 @@
 
-#include "SM_two_scale_model.hpp"
+#include "StandardModel_two_scale_model.hpp"
 #include "ew_input.hpp"
 #include "logger.hpp"
 #include "wrappers.hpp"
 
 using namespace flexiblesusy;
 
-void setup(SM<Two_scale>& mssm)
+void setup(StandardModel<Two_scale>& mssm)
 {
    Eigen::Matrix<double,3,3> Yu;
    Eigen::Matrix<double,3,3> Yd;
@@ -60,13 +60,13 @@ int main()
    INFO("running sm_example()");
    INFO("=============================");
 
-   SM<Two_scale> sm;
+   StandardModel<Two_scale> sm;
    //setup  sm  from  predifined parameters.
    //still to edit this to take sm values
    setup(sm);
    //get the DRbar masses immediately - just for fun.
    sm.calculate_DRbar_parameters();
-   //maybe we can take msbar SM parameters from literature
+   //maybe we can take msbar StandardModel parameters from literature
    
    // Alternativelo set up properly ourselves:
    //1. Input sm masses

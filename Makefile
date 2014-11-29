@@ -1,9 +1,9 @@
 # Package information
 PKGNAME            := FlexibleSUSY
-FLEXIBLESUSY_VERSION := 1.0.2
+FLEXIBLESUSY_VERSION := 1.0.3
 FLEXIBLESUSY_MAJOR := 1
 FLEXIBLESUSY_MINOR := 0
-FLEXIBLESUSY_PATCH := 2
+FLEXIBLESUSY_PATCH := 3
 FLEXIBLESUSY_EXTRA := 
 FLEXIBLESUSY_PKG   := $(PKGNAME)-$(FLEXIBLESUSY_VERSION)
 FLEXIBLESUSY_TAG   := v$(FLEXIBLESUSY_VERSION)
@@ -21,11 +21,12 @@ ENABLE_THREADS     := yes
 # C/C++ preprocessor defines
 ENABLE_COLOR_PRINTOUT := no
 ENABLE_DEBUG          := 
+ENABLE_CHECK_EIGENVALUE_ERROR := no
 ENABLE_SILENT         := no
 ENABLE_VERBOSE        := no
 
 # Makefile modules
-MODELS             := /home/pathron/SMcode/models/SM
+MODELS             := /home/pathron/SMcode/models/StandardModel
 MODULES            := config src fflite legacy slhaea doc
 MODULES            += $(MODELS)
 
@@ -225,6 +226,7 @@ showbuild:
 	@echo "ENABLE_COLOR_PRINTOUT = $(ENABLE_COLOR_PRINTOUT)"
 	@echo "ENABLE_COMPILE     = $(ENABLE_COMPILE)"
 	@echo "ENABLE_DEBUG       = $(ENABLE_DEBUG)"
+	@echo "ENABLE_CHECK_EIGENVALUE_ERROR = $(ENABLE_CHECK_EIGENVALUE_ERROR)"
 	@echo "ENABLE_FFLITE      = $(ENABLE_FFLITE)"
 	@echo "ENABLE_LOOPTOOLS   = $(ENABLE_LOOPTOOLS)"
 	@echo "ENABLE_META        = $(ENABLE_META)"
