@@ -1,7 +1,7 @@
 # Package information
 PKGNAME         := FlexibleSUSY
 VERSION         := 1.0.2
-ABSBASEDIR      := /home/pathron/SMcode3
+ABSBASEDIR      := /home/pathron/SMcode
 
 # Switches
 ENABLE_FFLITE    := no
