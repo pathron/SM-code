@@ -336,7 +336,7 @@ void rhohat(double & outrho, double & outgmu, double alphaDRbar,
 
   double deltaR = dR(outrho, outgmu, sinthW, alphaDRbar, sm, pizztMZ, piwwt0);      
     
-  outgmu = PI * alphaDRbar /                                                                                                   
+  outgmu = PI * alphaDRbar / 
     (root2 * sqr(mz) * sinthW * costhW * (1.0 - deltaR));  
 
   
@@ -396,22 +396,22 @@ int main()
    std::cout << "lam= " << sm.get_Lambdax() << std::endl;
   
    
-    //think I must calculate DRbar masses first
-    sm.calculate_DRbar_parameters();
-    sm.print(std::cout);
+   //think I must calculate DRbar masses first
+   sm.calculate_DRbar_parameters();
+   sm.print(std::cout);
    //calcualte pole masses
-  
-    //currently not calculating right masses
+   
+   //currently not calculating right masses
    // simple to hack or create alternative version
-      sm.calculate_pole_masses();
+   sm.calculate_pole_masses();
    // is it this simple?
-   std::cout << "after calculating pole mases MZ =" << sm.get_physical().MVZ << std::endl;  sm.print(std::cout);
+   std::cout << "after calculating pole mases MZ =" << sm.get_physical().MVZ << std::endl;  
+   sm.print(std::cout);
    //may need problem point test at this point.
 
+   //Now I must calculate GMU here.
+    
    //do decays
-
-
-
 
    return 0;
 }
